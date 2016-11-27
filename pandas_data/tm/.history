@@ -1,0 +1,7 @@
+[/home/ct/ipython/notebook/pandas_data/tm]  8456  [2016-11-27 19:05:29][ct][103.77.56.158]cd tm/
+[/home/ct/ipython/notebook/pandas_data/tm]  8457  [2016-11-27 19:05:36][ct][103.77.56.158]m3w https://plot.ly/python/line-and-scatter/
+[/home/ct/ipython/notebook/pandas_data/tm]  8458  [2016-11-27 19:05:40][ct][103.77.56.158]w3m https://plot.ly/python/line-and-scatter/
+[/home/ct/ipython/notebook/pandas_data/tm]  8459  [2016-11-27 19:05:46][ct][103.77.56.158]wget https://plot.ly/python/line-and-scatter/
+[/home/ct/ipython/notebook/pandas_data/tm]  8460  [2016-11-27 19:05:53][ct][103.77.56.158]less index.html 
+[/home/ct/ipython/notebook/pandas_data/tm]  8461  [2016-11-27 19:06:14][ct][103.77.56.158]ltr
+[/home/ct/ipython/notebook/pandas_data/tm]  8462  [2016-11-27 19:07:23][ct][103.77.56.158]grep 'for' index.html 

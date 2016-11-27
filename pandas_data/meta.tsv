@@ -1,0 +1,5 @@
+File accession	Biosample term id	Biosample term name	Biosample type	Biosample life stage	Biosample sex	Biosample organism	Biosample treatments	Biosample subcellular fraction term name	Biosample phase	Biosample synchronization stage	Biosample Age
+ENCFF673KYR	CL:0000650	mesangial cell	primary cell	unknown, fetal	unknown, female	Homo sapiens					
+ENCFF262OBL	CL:1001568	pulmonary artery endothelial cell	primary cell	adult	male	Homo sapiens					52 year
+ENCFF060LPA	CL:1001568	pulmonary artery endothelial cell	primary cell	adult	male	Homo sapiens					23 year
+ENCFF289HGQ	CL:0002558	fibroblast of villous mesenchyme	primary cell	newborn	male, female	Homo sapiens					
