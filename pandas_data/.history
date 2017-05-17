@@ -1,0 +1,77 @@
+[/home/ct/ipython/notebook/pandas_data]  8388  [2016-11-27 09:04:46][ct][103.77.56.158]cd pandas_data/
+[/home/ct/ipython/notebook/pandas_data]  8389  [2016-11-27 09:04:47][ct][103.77.56.158]ls
+[/home/ct/ipython/notebook/pandas_data]  8390  [2016-11-27 09:04:49][ct][103.77.56.158]ls -sh
+[/home/ct/ipython/notebook/pandas_data]  8391  [2016-11-27 09:05:02][ct][103.77.56.158]less ENCFF134ESO.tsv 
+[/home/ct/ipython/notebook/pandas_data]  8392  [2016-11-27 09:05:59][ct][103.77.56.158]#awk 'BEGIN{OFS=FS="\t"}{if(FNR==1) print}' ENCFF134ESO.tsv 
+[/home/ct/ipython/notebook/pandas_data]  8393  [2016-11-27 09:06:07][ct][103.77.56.158]checkCol.sh -f ENCFF134ESO.tsv 
+[/home/ct/ipython/notebook/pandas_data]  8394  [2016-11-27 09:07:23][ct][103.77.56.158]cut -f 1-7 ENCFF134ESO.tsv | awk 'BEGIN{OFS=FS="\t"}{if(FNR==1 || $0~/^EN/) print $0; } | head -n 100 >1ENCFF134ESO.tsv
+[/home/ct/ipython/notebook/pandas_data]  8395  [2016-11-27 09:07:32][ct][103.77.56.158]cut -f 1-7 ENCFF134ESO.tsv | awk 'BEGIN{OFS=FS="\t"}{if(FNR==1 || $0~/^EN/) print $0; }' | head -n 100 >1ENCFF134ESO.tsv
+[/home/ct/ipython/notebook/pandas_data]  8396  [2016-11-27 09:07:35][ct][103.77.56.158]ls -sh
+[/home/ct/ipython/notebook/pandas_data]  8397  [2016-11-27 09:07:40][ct][103.77.56.158]less 1ENCFF134ESO.tsv 
+[/home/ct/ipython/notebook/pandas_data]  8397  [2016-11-27 09:07:40][ct][103.77.56.158]less 1ENCFF134ESO.tsv 
+[/home/ct/ipython/notebook/pandas_data]  8398  [2016-11-27 09:09:21][ct][103.77.56.158]cut -f 1-7 ENCFF134ESO.tsv | awk 'BEGIN{OFS=FS="\t"}{if(FNR==1 || $0~/^EN/) print $0; }' | head -n 51 >1ENCFF134ESO.tsv
+[/home/ct/ipython/notebook/pandas_data]  8399  [2016-11-27 09:09:22][ct][103.77.56.158]ls
+[/home/ct/ipython/notebook/pandas_data]  8400  [2016-11-27 09:09:24][ct][103.77.56.158]ls -sh
+[/home/ct/ipython/notebook/pandas_data]  8401  [2016-11-27 09:10:23][ct][103.77.56.158]for i in ENCFF*; do cut -f 1-7 $i | awk 'BEGIN{OFS=FS="\t"}{if(FNR==1 || $0~/^EN/) print $0; }' | head -n 51 >1$i; done
+[/home/ct/ipython/notebook/pandas_data]  8402  [2016-11-27 09:10:24][ct][103.77.56.158]ls
+[/home/ct/ipython/notebook/pandas_data]  8403  [2016-11-27 09:10:26][ct][103.77.56.158]ls -sh
+[/home/ct/ipython/notebook/pandas_data]  8404  [2016-11-27 09:10:42][ct][103.77.56.158]rm -f ENCFF*
+[/home/ct/ipython/notebook/pandas_data]  8405  [2016-11-27 09:10:43][ct][103.77.56.158]ls
+[/home/ct/ipython/notebook/pandas_data]  8406  [2016-11-27 09:10:51][ct][103.77.56.158]less Gene_metadata_primary_wt_whole_cell.tsv 
+[/home/ct/ipython/notebook/pandas_data]  8407  [2016-11-27 09:30:04][ct][103.77.56.158]ls
+[/home/ct/ipython/notebook/pandas_data]  8408  [2016-11-27 09:30:24][ct][103.77.56.158]rename '1E' 'E' 1ENCFF*
+[/home/ct/ipython/notebook/pandas_data]  8409  [2016-11-27 09:30:25][ct][103.77.56.158]l
+[/home/ct/ipython/notebook/pandas_data]  8410  [2016-11-27 10:09:29][ct][103.77.56.158]ls
+[/home/ct/ipython/notebook/pandas_data]  8411  [2016-11-27 10:09:32][ct][103.77.56.158]less gencode.v24.ENS2SYN 
+[/home/ct/ipython/notebook/pandas_data]  8412  [2016-11-27 10:10:19][ct][103.77.56.158]#cat ENCFF* | cut -f 1 | sort -u | awk 'BEGIN{OFS=FS="\t"'
+[/home/ct/ipython/notebook/pandas_data]  8413  [2016-11-27 10:19:08][ct][103.77.56.158]vim ENCFF134ESO.tsv 
+[/home/ct/ipython/notebook/pandas_data]  8414  [2016-11-27 10:31:21][ct][103.77.56.158]ls
+[/home/ct/ipython/notebook/pandas_data]  8415  [2016-11-27 10:31:30][ct][103.77.56.158]rm -f ENCFF*
+[/home/ct/ipython/notebook/pandas_data]  8416  [2016-11-27 10:31:31][ct][103.77.56.158]ls
+[/home/ct/ipython/notebook/pandas_data]  8417  [2016-11-27 10:32:02][ct][103.77.56.158]mkdir tmp
+[/home/ct/ipython/notebook/pandas_data]  8418  [2016-11-27 10:32:17][ct][103.77.56.158]ls
+[/home/ct/ipython/notebook/pandas_data]  8418  [2016-11-27 10:32:17][ct][103.77.56.158]ls
+[/home/ct/ipython/notebook/pandas_data]  8419  [2016-11-27 10:32:48][ct][103.77.56.158]ls tmp/
+[/home/ct/ipython/notebook/pandas_data]  8420  [2016-11-27 10:33:12][ct][103.77.56.158]#for i in tmp/ENCFF*; do cut -f 1-7 $i | awk 'BEGIN{OFS=FS="\t"}{if(FNR==1 || $0~/^EN/) print $0; }' | head -n 51 >1$i; done
+[/home/ct/ipython/notebook/pandas_data]  8421  [2016-11-27 10:33:24][ct][103.77.56.158]for i in tmp/ENCFF*; do echo $I; done
+[/home/ct/ipython/notebook/pandas_data]  8422  [2016-11-27 10:33:36][ct][103.77.56.158]for i in "tmp/ENCFF*"; do echo $I; done
+[/home/ct/ipython/notebook/pandas_data]  8423  [2016-11-27 10:33:52][ct][103.77.56.158]for i in `ls tmp/ENCFF*`; do echo $i; done
+[/home/ct/ipython/notebook/pandas_data]  8424  [2016-11-27 10:34:07][ct][103.77.56.158]for i in `ls tmp | grep 'ENC`; do echo $i; done
+[/home/ct/ipython/notebook/pandas_data]  8425  [2016-11-27 10:34:12][ct][103.77.56.158]for i in `ls tmp | grep 'ENC'`; do echo $i; done
+[/home/ct/ipython/notebook/pandas_data]  8426  [2016-11-27 10:34:33][ct][103.77.56.158]for i in `ls tmp | grep 'ENC'`; do cut -f 1-7 tmp/$i | awk 'BEGIN{OFS=FS="\t"}{if(FNR==1 || $0~/^EN/) print $0; }' | head -n 51 >$i; done
+[/home/ct/ipython/notebook/pandas_data]  8427  [2016-11-27 10:34:35][ct][103.77.56.158]ls
+[/home/ct/ipython/notebook/pandas_data]  8428  [2016-11-27 10:34:39][ct][103.77.56.158]less ENCFF060LPA.tsv 
+[/home/ct/ipython/notebook/pandas_data]  8429  [2016-11-27 10:34:47][ct][103.77.56.158]rm -rf tmp/
+[/home/ct/ipython/notebook/pandas_data]  8430  [2016-11-27 11:17:35][ct][103.77.56.158]ls
+[/home/ct/ipython/notebook/pandas_data]  8431  [2016-11-27 11:17:40][ct][103.77.56.158]less ENCFF262OBL.tsv
+[/home/ct/ipython/notebook/pandas_data]  8432  [2016-11-27 16:39:47][ct][103.77.56.158]ls
+[/home/ct/ipython/notebook/pandas_data]  8433  [2016-11-27 16:39:52][ct][103.77.56.158]less Gene_metadata_primary_wt_whole_cell.tsv
+[/home/ct/ipython/notebook/pandas_data]  8434  [2016-11-27 16:39:59][ct][103.77.56.158]mv Gene_metadata_primary_wt_whole_cell.tsv meta.tsv
+[/home/ct/ipython/notebook/pandas_data]  8435  [2016-11-27 16:40:00][ct][103.77.56.158]ls
+[/home/ct/ipython/notebook/pandas_data]  8436  [2016-11-27 16:40:50][ct][103.77.56.158]less meta.tsv 
+[/home/ct/ipython/notebook/pandas_data]  8437  [2016-11-27 16:43:49][ct][103.77.56.158]ls
+[/home/ct/ipython/notebook/pandas_data]  8438  [2016-11-27 16:44:33][ct][103.77.56.158]less meta.tsv 
+[/home/ct/ipython/notebook/pandas_data]  8439  [2016-11-27 16:44:57][ct][103.77.56.158]ls
+[/home/ct/ipython/notebook/pandas_data]  8440  [2016-11-27 16:45:00][ct][103.77.56.158]ls -shtr
+[/home/ct/ipython/notebook/pandas_data]  8441  [2016-11-27 16:46:40][ct][103.77.56.158]less meta.tsv 
+[/home/ct/ipython/notebook/pandas_data]  8442  [2016-11-27 17:03:24][ct][103.77.56.158]l
+[/home/ct/ipython/notebook/pandas_data]  8443  [2016-11-27 17:03:25][ct][103.77.56.158]ls
+[/home/ct/ipython/notebook/pandas_data]  8443  [2016-11-27 17:03:25][ct][103.77.56.158]ls
+[/home/ct/ipython/notebook/pandas_data]  8444  [2016-11-27 17:04:09][ct][103.77.56.158]less meta2.tsv 
+[/home/ct/ipython/notebook/pandas_data]  8445  [2016-11-27 17:04:28][ct][103.77.56.158]ls
+[/home/ct/ipython/notebook/pandas_data]  8446  [2016-11-27 17:04:41][ct][103.77.56.158]mv meta2.tsv meta.tsv
+[/home/ct/ipython/notebook/pandas_data]  8447  [2016-11-27 17:04:44][ct][103.77.56.158]ls
+[/home/ct/ipython/notebook/pandas_data]  8448  [2016-11-27 17:06:36][ct][103.77.56.158]less TPM 
+[/home/ct/ipython/notebook/pandas_data]  8449  [2016-11-27 17:06:40][ct][103.77.56.158]ls
+[/home/ct/ipython/notebook/pandas_data]  8450  [2016-11-27 17:06:57][ct][103.77.56.158]ls -l
+[/home/ct/ipython/notebook/pandas_data]  8451  [2016-11-27 17:07:01][ct][103.77.56.158]pwd
+[/home/ct/ipython/notebook/pandas_data]  8452  [2016-11-27 17:07:26][ct][103.77.56.158]ls
+[/home/ct/ipython/notebook/pandas_data]  8453  [2016-11-27 17:07:38][ct][103.77.56.158]rm -f genecode.v24.ENS2SYN TPM
+[/home/ct/ipython/notebook/pandas_data]  8454  [2016-11-27 17:07:39][ct][103.77.56.158]ls
+[/home/ct/ipython/notebook/pandas_data]  8454  [2016-11-27 17:07:39][ct][103.77.56.158]ls
+[/home/ct/ipython/notebook/pandas_data]  8455  [2016-11-27 19:05:27][ct][103.77.56.158]mkdir tm
+[/home/ct/ipython/notebook/pandas_data]  8469  [2016-11-27 20:54:25][ct][103.77.56.158]cd pandas_data/
+[/home/ct/ipython/notebook/pandas_data]  8470  [2016-11-27 20:54:25][ct][103.77.56.158]ls
+[/home/ct/ipython/notebook/pandas_data]  8471  [2016-11-27 20:54:36][ct][103.77.56.158]git rm -rf tm
+[/home/ct/ipython/notebook/pandas_data]  8472  [2016-11-27 20:54:38][ct][103.77.56.158]ls
+[/home/ct/ipython/notebook/pandas_data]  8473  [2016-11-27 20:54:40][ct][103.77.56.158]ls -sh
